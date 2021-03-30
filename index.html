@@ -37,7 +37,7 @@
         <label class="form-label" for="form1">Search for a city:</label>
         <div class="input-group">
           <div class="form-outline">
-            <input type="search" id="form1" class="form-control" />
+            <input type="search" id="search-input" class="form-control" />
           </div>
           <button id="search-btn" type="button" class="btn btn-primary">
             <i class="fas fa-search"></i>
@@ -51,6 +51,7 @@
 
       <div id="container-weather-information">
         <!--where weather information will be displayed-->
+        <div class="flex-column" id="users"></div>            <!--testing-->
 
         <div
           id="weather-information-card"
@@ -66,15 +67,15 @@
             </h3>
             <h5 class="card-subtitle mb-2 text-muted">
               Temperature:
-              <span id="temperature">ghfghjghj</span>
+              <span id="temperature">°F</span>
             </h5>
             <h5 class="card-subtitle mb-2 text-muted">
               Humidity:
-              <span id="humidity"></span>
+              <span id="humidity">%</span>
             </h5>
             <h5 class="card-subtitle mb-2 text-muted">
               Wind Speed:
-              <span id="wind-speed"></span>
+              <span id="wind-speed">MPH</span>
             </h5>
             <h5 class="card-subtitle mb-2 text-muted">
               UV Index:
@@ -84,7 +85,7 @@
         </div>
       </div>
 
-      <div id="5-day-forecast">
+      <div id="container-5-day-forecast">
         <!--where 5 day forecast will be displayed-->
       </div>
     </main>
